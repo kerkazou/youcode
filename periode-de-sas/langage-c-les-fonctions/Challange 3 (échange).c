@@ -28,6 +28,6 @@ int main()
     printf("Enter un enier pour tester s'il est premier ou non : ");
     scanf("%d",&nombre);
     premier = isPremier(nombre,a,b,i,compteur);
-    printf("votre nombre est : ",premier);
+    printf("votre nombre est : %b",premier);
     return 0;
 }
