@@ -13,6 +13,7 @@ int choix,i,n;
 char CIN[30], Nom[30], Prenom[30];
 double Montant;
 int size=0;
+int compteur=0;
 //char Nbr_clients[];
 compte client[Nbr_clients]; //reserver un tableu
 
@@ -27,7 +28,7 @@ void Affichage_Menu(){
 }
 
 int choisir(int choix){
-    printf("\t Saisir votre choix : ");
+    printf("\t Votre choix : ");
     scanf("%d",&choix);
     return choix;
 }
@@ -88,9 +89,37 @@ void retour_a_menu(){
     printf("1_ retour a menu : \n\n");
     printf("2_ Quitter l’application : \n\n");
     scanf("%d",&retour);
-    if(retour==1) main();
-    else exit(0);
+    if(retour==1)
+       main();
+    else
+       exit(0);
 }
+
+void operation(){
+    printf("1) Retrait: \n 2) Depot:");
+    choix = choisir(choix);//choisir un chois d'opération retrait ou depot.
+    if(choix==1)
+        printf("Retrait");
+    else if(choix==2)
+        printf("Depot");
+}
+
+void Recherche_CIN(){
+    char R_CIN[30];
+    compte client[size];
+    printf("\t Saisir votre CIN : ");
+    scanf("%s",&R_CIN);
+    for(i=0 ; i<compteur ; i++){
+        if(strstr(R_CIN , client[i].CIN))
+            printf("votre CIN : %s est exite.");
+            operation();
+        else if {
+            printf("votre CIN : %s pas exite.");
+            main();
+        }
+    }
+}
+
 
 
 int main()
@@ -100,16 +129,21 @@ int main()
         Affichage_Menu(); //affich le menu.
         choix = choisir(choix);//choisir l'opération.
         switch (choix){
-            case 1 : //crée un compt.
-            Introduire_un_compte_bancaire(CIN, Nom, Prenom, Montant);
-            printf("\n \n");
-            retour_a_menu();
+            case 1 : //crée un compte.
+                Introduire_un_compte_bancaire(CIN, Nom, Prenom, Montant);
+                printf("\n \n");
+                retour_a_menu();
                 break;
-            case 2 :
+            case 2 : //crée plusieur compte.
             	Introduire_plusieurs_comptes_bancaires(CIN, Nom, Prenom, Montant);
                 printf("\n \n");
                 retour_a_menu();
             	break;
+            case 3 : //Opérations :
+            Recherche_CIN();
+            operation();
+            retour_a_menu();
+            break;
             default:
                 break;
         }
