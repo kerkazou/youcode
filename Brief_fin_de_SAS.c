@@ -1,48 +1,96 @@
 #include <stdio.h>
 #include <windows.h>
-#define Nbr_clients 200
+#include <stdlib.h>
+#define Nbr_clients 2000
 
-int choix;
-char CIN[10], Nom[10], Prenom[10];
-double Montant;
 typedef struct {
-        char CIN[10];
-        char Nom[10];
-        char Prenom[10];
+        char CIN[30];
+        char Nom[30];
+        char Prenom[30];
         double Montant;
-    }compt;  
+    }compte;
+int choix,i,n;
+char CIN[30], Nom[30], Prenom[30];
+double Montant;
+int size=0;
+//char Nbr_clients[];
+compte client[Nbr_clients]; //reserver un tableu
 
 void Affichage_Menu(){
-    printf("\t \t Bienvenu sur la bonque :\n \n \n");
-    printf("1) Introduire un compte bancaire :\n \n");
-    printf("2) Introduire plusieurs comptes bancaires :\n \n");
-    printf("3) Opérations :\n \n");
-    printf("4) Affichage :\n \n");
-    printf("5) Fidélisation :\n \n");
-    printf("6) Quitter l’application :\n \n \n");
+    printf("\t \t \t Bienvenu sur la bonque :\n \n \n");
+    printf("\t 1) Introduire un compte bancaire :\n \n");
+    printf("\t 2) Introduire plusieurs comptes bancaires :\n \n");
+    printf("\t 3) Operations :\n \n");
+    printf("\t 4) Affichage :\n \n");
+    printf("\t 5) Fidelisation :\n \n");
+    printf("\t 6) Quitter l’application :\n \n \n");
 }
 
 int choisir(int choix){
-    printf("Pour accer a un opération choisir un nombre :");
-    scanf("%d",choix);
+    printf("\t Saisir votre choix : ");
+    scanf("%d",&choix);
     return choix;
 }
 
-char Introduire_un_compte_bancaire(char CIN[10], char Nom[10], char Prenom[10], double Montant){
+void Introduire_un_compte_bancaire(char CIN[30], char Nom[30], char Prenom[30], double Montant){
     system("cls");
-    compt info;
-    printf("Entrer les donnee suivent : \n \n \n");
+    compte client[size];
+    size++;
+    printf("\t Entrer les donnee suivent : \n \n \n");
     printf("CIN : ");
-    scanf("%s",info.CIN);
+    scanf("%s",&client[size].CIN);
+    printf("\n");
     printf("Nom : ");
-    scanf("%s",info.Nom);
+    scanf("%s",&client[size].Nom);
+    printf("\n");
     printf("prenom : ");
-    scanf("%s",info.Prenom);
+    scanf("%s",&client[size].Prenom);
+    printf("\n");
     printf("Montant : ");
-    scanf("%lf",&info.Montant);
-    return CIN,Nom,Prenom,Montant;
+    scanf("%lf",&client[size].Montant);
+    printf("\n");
+    printf("Votre compte bancaire a ete cree avec succes : \n");
+    printf("\n");
+    printf("CIN : %s   Nom : %s   Prenom : %s   Montant : %2.lf MAD" ,client[size].CIN, client[size].Nom , client[size].Prenom , client[size].Montant);
+    printf("\n");
 }
 
+void Introduire_plusieurs_comptes_bancaires(char CIN[30], char Nom[30], char Prenom[30], double Montant){
+	system("cls");
+    compte client[size];
+    printf("Entre le nombre des clients : n = ");
+    scanf("%d",&n);
+    for (i=0;i<n;i++){
+    size++;
+    printf("Entrer les donnee suivent : \n \n \n");
+    printf("CIN : ");
+    scanf("%s",&client[i].CIN);
+    printf("\n");
+    printf("Nom : ");
+    scanf("%s",&client[i].Nom);
+    printf("\n");
+    printf("prenom : ");
+    scanf("%s",&client[i].Prenom);
+    printf("\n");
+    printf("Montant : ");
+    scanf("%lf",&client[i].Montant);
+    printf("\n");
+    printf("Votre compte bancaire a ete cree avec succes : \n");
+	}
+	for (i=0;i<n;i++){
+        printf("CIN : %s   Nom : %s   Prenom : %s   Montant : %2.lf MAD" ,client[i].CIN, client[i].Nom , client[i].Prenom , client[i].Montant);
+        printf("\n");
+	}
+}
+
+void retour_a_menu(){
+    int retour;
+    printf("1_ retour a menu : \n\n");
+    printf("2_ Quitter l’application : \n\n");
+    scanf("%d",&retour);
+    if(retour==1) main();
+    else exit(0);
+}
 
 
 int main()
@@ -52,9 +100,16 @@ int main()
         Affichage_Menu(); //affich le menu.
         choix = choisir(choix);//choisir l'opération.
         switch (choix){
-            case 1 :
-            Introduire_un_compte_bancaire(CIN, Nom, Prenom, Montant);//crée un compt.
+            case 1 : //crée un compt.
+            Introduire_un_compte_bancaire(CIN, Nom, Prenom, Montant);
+            printf("\n \n");
+            retour_a_menu();
                 break;
+            case 2 :
+            	Introduire_plusieurs_comptes_bancaires(CIN, Nom, Prenom, Montant);
+                printf("\n \n");
+                retour_a_menu();
+            	break;
             default:
                 break;
         }
