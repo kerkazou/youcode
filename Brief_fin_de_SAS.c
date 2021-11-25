@@ -166,22 +166,28 @@ void Descendent(){
 }
 
 void Fidelisalton(){
-	printf("hhhhh fia lmoot dial n3as offf ");
 	compte tab_temp;
-	int i,j;
+	int i,j,k=0;
+	double F=0.013;
+	printf("hhhhh fia lmoot dial n3as offf ");
 	for(i=0 ; i<size ; i++){	
-		for(j=0 ; j<size-i-1 ; j++){
-			if (client[j].Montant > client[j + 1].Montant){
-				tab_temp=client[j];
-				client[j] =client[j + 1];
+		for(j=i+1 ; j<size ; j++){
+			if (client[i].Montant > client[i + 1].Montant){
+				tab_temp=client[i];
+				client[i] =client[j + 1];
 				client[j + 1] = tab_temp;
 			}
  		}
 	}
 	printf("\n Les donners des comptes par ascendent est : \n\n  CIN  \t  Nom  \t  Prenom  \t  Montant \n");
-	for(i=0;i<3;i++){
-		client[i].Montant = client[i].Montant + ( client[i].Montant * 0,013 );
-		printf("  %s \t %s \t %s \t %lf \n \n",client[i].Nom,client[i].Prenom,client[i].CIN,client[i].Montant);
+	for(i=0;i<size;i++){
+		if(k<3){
+			client[i].Montant = client[i].Montant + ( client[i].Montant * F );
+			printf("  %s \t %s \t %s \t %lf \n \n",client[i].Nom,client[i].Prenom,client[i].CIN,client[i].Montant);
+		k++;
+		}
+		else
+		break;
 	}
 }
 
@@ -230,17 +236,19 @@ int main()
             			Descendent();
             			retour_a_menu();
             			break;
+				}
             	case 5 :
             		Fidelisalton();
+					retour_a_menu();
             		break;
             	case 6 :
             		Quitter_l_application();
             		break;
-				}
             default:
                 break;
         }
     }
     while (choix<1 || choix>6);
+		Quitter_l_application();
     return 0;
 }
