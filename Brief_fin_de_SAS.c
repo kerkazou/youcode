@@ -118,8 +118,13 @@ void Operation(){
 			scanf("%s",R_CIN);
 			for (i = 0; i <= size ; i++){
 		        if (strcmp(R_CIN,client[i].CIN) == 0){ 
+test :
 				printf("Entrez le solde : ");
 				scanf("%lf",&r);
+				while (r<0){
+					printf("votre solde est negatif :");
+					goto test ;
+				}
 				client[i].Montant += r;
 				printf("Votre montant maintenat est %lf\n",client[i].Montant);
 				break;
@@ -238,6 +243,7 @@ int main()
             			break;
 				}
             	case 5 :
+				system("cls");
             		Fidelisalton();
 					retour_a_menu();
             		break;
