@@ -1,5 +1,5 @@
 .h{
-    display: flex; 
+    display: flex;
 }
 
 .listh{
@@ -23,5 +23,42 @@ ol{
 
 .introduction{
     width: 600px;
-    height: 200px;
+    height: 80px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.produit{
+    border:1.5px solid #000000;
+    width: 200px;
+    height: 450px;
+    margin: 10px;
+    
+}
+
+.intproduit{
+    margin: 10px;
+}
+
+.Carte_Produit{
+    display: flex;
+}
+
+.t1{
+    color: #95a5a6;
+}
+
+.t2{
+    color: #27ae60;
+}
+
+.t3{
+    text-decoration: underline;
+}
+
+.h li a:hover{
+    color: green; 
+    text-decoration: underline;   
 }
