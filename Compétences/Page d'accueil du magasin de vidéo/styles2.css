@@ -62,3 +62,13 @@ a{
     color: green; 
     text-decoration: underline;   
 }
+
+.img{
+    width: 180px;
+    height: 250px;
+}
+
+.logo{
+    width: 100px;
+    height: 60px;
+}
