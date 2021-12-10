@@ -107,4 +107,9 @@ a{
     header div ul li{
         margin: 0 10px;
     }
+
+    .h{
+        display: flex;
+        flex-direction: column;
+    }
 }
