@@ -1,0 +1,46 @@
+body{
+    margin: 10px;
+}
+
+.logo{
+    font-size: 25px;
+    margin-top: 18px;
+}
+
+nav{
+    display: flex;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+nav ul li{
+    margin: 10px;
+}
+
+nav ul a{
+    text-decoration: none;
+    color: black;
+}
+
+nav ul a:hover{
+    background-color: black;
+    color: white;
+}
+
+nav span {
+    margin-left: 800px;
+}
+
+header{
+    border: 1px solid black;
+    width: 100%;
+    height: 250px;
+    background-color: black;
+}
+
+.hero-image{
+    
+}
