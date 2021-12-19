@@ -11,21 +11,31 @@ body{
 .background-Log-In{
     opacity: 40%;
 }
+
 .page-log-In{
     margin-top: -2500px;
-    border: solid black 40px;
+    border: solid black 20px;
     border-radius: 10px;
     background: linear-gradient(70deg, #FB7B30,#A831A5);
     width: 600px;
     height: 520px;
     margin-left: 350px;
-    opacity: 60%;
+    position: fixed;
+    opacity: 80%;
+}
+
+.Ballot-X-heavy{   /***** la fermuture de page *****/
+    width: 60px;
+    height: 60px;
+    margin-left: 555px;
+    margin-top: -15px;
 }
 
 .user{
     width: 140px;
     height: 150px;
-    margin-left: 230px;
+    margin-left: 240px;
+    margin-top: -40px;
 }
 
 .page2-log-In{
@@ -34,27 +44,36 @@ body{
 }
 
 .Email{
-    width: 300px;
+    width: 280px;
     height: 30px;
+    margin-bottom: 60px;
     border: none;
     border-radius: 15px;
+    background-color: white;
+    padding-left: 30px;
 }
 .Password{
-    width: 300px;
+    width: 280px;
     height: 30px;
-    margin-top: 50px;
     margin-bottom: 50px;
     border: none;
     border-radius: 15px;
+    background-color: white;
+    padding-left: 40px;
 }
 
 .button-Log-In{
-    background: linear-gradient(70deg, #FB7B30,#A831A5);
+    background: linear-gradient(70deg, #ff7322,#7e167a);
     width: 200px;
     height: 30px;
     border: none;
     border-radius: 5px;
-    margin-left: 50px;
+    margin-left: 55px;
+}
+.button-Log-In:hover{
+    width: 230px;
+    height: 35px;
+    margin-left: 40px;
 }
 
 .liste-R-FP{
@@ -65,6 +84,12 @@ body{
     margin-right: 40px;
     list-style: none;
     margin-top: 40px;
+}
+
+.checkbox{}
+
+.placeholder{
+    margin-left: 15px;
 }
 
 

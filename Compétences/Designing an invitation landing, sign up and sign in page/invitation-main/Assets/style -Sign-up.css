@@ -1,0 +1,452 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    margin-top: 20px;
+    margin-left: 110px;
+    margin-right: 110px;
+}
+/******************************************log in**************************/
+.background-Sign-up{
+    opacity: 40%;
+}
+
+.page-Sign-up{
+    margin-top: -2500px;
+    border: solid black 20px;
+    border-radius: 10px;
+    background: linear-gradient(70deg, #FB7B30,#A831A5);
+    width: 600px;
+    height: 520px;
+    margin-left: 350px;
+    position: fixed;
+    opacity: 80%;
+}
+
+.Ballot-X-heavy{  /***** la fermuture de page *****/
+    width: 60px;
+    height: 60px;
+    margin-left: 555px;
+    margin-top: -15px;
+}
+.Ballot-X-heavy:hover{
+    background-color: white;
+}
+
+.user{
+    width: 110px;
+    height: 110px;
+    margin-left: 240px;
+    margin-top: -45px;
+}
+
+.page2-Sign-up{
+    margin-left: 150px;
+    margin-top: 50px;
+}
+
+.First-Name{
+    width: 120px;
+    height: 30px;
+    margin-bottom: 30px;
+    border: none;
+    border-radius: 15px;
+    background-color: white;
+    padding-left: 30px;
+}
+.Last-Name{
+    width: 120px;
+    height: 30px;
+    margin-bottom: 30px;
+    border: none;
+    border-radius: 15px;
+    background-color: white;
+    padding-left: 30px;
+}
+
+.Email{
+    width: 280px;
+    height: 30px;
+    margin-bottom: 30px;
+    border: none;
+    border-radius: 15px;
+    background-color: white;
+    padding-left: 30px;
+}
+.Password{
+    width: 280px;
+    height: 30px;
+    margin-bottom: 30px;
+    border: none;
+    border-radius: 15px;
+    background-color: white;
+    padding-left: 40px;
+}
+
+.Date{
+    width: 200px;
+    height: 30px;
+    margin-left: 55px;
+    margin-bottom: 30px;
+}
+
+.button-Sign-up{
+    background: linear-gradient(70deg, #ff7322,#7e167a);
+    width: 200px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 55px;
+}
+.button-Sign-up:hover{
+    width: 230px;
+    height: 35px;
+    margin-left: 40px;
+}
+
+.liste-R-FP{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 40px;
+    margin-right: 40px;
+    list-style: none;
+    margin-top: 40px;
+}
+
+.checkbox{}
+
+.placeholder{
+    margin-left: 15px;
+}
+
+
+
+/******************************************log in**************************/
+/*navigateur*/
+.logo{
+    font-size: 20px;
+    margin-right: 70px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    padding: 0px;
+}
+
+a{
+    text-decoration: none;
+}
+
+body nav p a{
+    color: black;
+}
+
+nav ul li{
+    margin: 10px;
+}
+
+nav ul a{
+    color: black;
+}
+
+nav ul a:hover{
+    background-color: black;
+    color: white;
+}
+/*header*/
+header{
+    width: 100%;
+    height: 300px;
+    background-color: black;
+    border-radius: 5px;
+}
+
+.hero-image{
+    margin-left: 800px;
+    margin-top: -20px;
+    width: 480px;
+}
+
+body header h1{
+    color: white;
+    margin-left: 70px;
+    margin-top: -320px;
+}
+
+body header p{
+    color: white;
+    margin-left: 70px;
+    width: 43%;
+}
+
+body header div select{
+    width: 350px;
+    height: 40px;
+    margin-left: 70px;
+    color: grey;
+    border-radius: 5px;
+}
+
+.button0{
+    width: 170px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(70deg, #FB7B30,#A831A5);
+    font-size: 13px;
+    margin-left: 10px;
+}
+
+.margin{
+    margin-top: 100px;
+    margin-bottom: -180px;
+}
+
+.company-1{
+    width: 200px;
+    height: 60px;
+    margin-right: 55px;
+}
+
+.company-4{
+    width: 160px;
+    height: 40px;
+    margin-right: 55px;
+}
+
+.company-2{
+    width: 160px;
+    height: 40px;
+    margin-right: 55px;
+}
+
+.company-3{
+    width: 160px;
+    height: 35px;
+    margin-right: 55px;
+}
+
+.company-5{
+    width: 230px;
+    height: 50px;
+    margin-right: 55px;
+}
+
+.company-6{
+    width: 80px;
+    height: 50px;
+}
+
+.illustration{
+    margin-top: 260px;
+    display: flex;
+    width: 100%;
+}
+.h_illustration{
+    text-align: center;
+}
+
+.left-illustration{
+    width: 30%;
+}
+
+.left-illustration img{
+    width: 100%;
+    height: 630px;
+}
+
+.right-illustration{
+    width: 30%;
+}
+
+.right-illustration img{
+    width: 100%;
+    height: 630px;
+}
+
+.p_illustration{
+    width: 40%;
+    padding: 40px;
+}
+
+body section .t_illustration{
+    text-align: center;
+}
+
+body section h3{
+    margin-left: 8%;
+    display: flex;
+}
+
+body section h3::before{
+    margin-left: 3px;
+}
+
+body section p{
+    width: 83%;
+    margin-left: 40px;
+    margin-top: -15px;
+    margin-bottom: 30px;
+}
+
+.button{
+    text-align: center;
+    padding-top: 40px;
+    font-size: 13px;
+}
+
+body section .button button{
+    height: 40px;
+    width: 180px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background: linear-gradient(70deg, #FB7B30,#A831A5);
+}
+
+.header2{
+    margin-top: 100px;
+}
+
+.signup-image{
+    margin-top: -50px;
+    margin-left: 46%;
+    width: 670px;
+}
+
+.h_header2{
+    color: white;
+    width: 580px;
+    font-size: 40px;
+    margin-left: 50px;
+}
+.p_header2{
+    margin-left: 50px;
+}
+
+.check-ic{
+    width: 30px;
+    height: 30px;
+}
+
+.button2{
+   margin-left: 50px;
+}
+
+#button21{
+    height: 40px;
+    width: 210px;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    font-size: 13px;
+    background-color: white;
+}
+
+.button22{
+    width: 170px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(70deg, #FB7B30,#A831A5);
+    font-size: 13px;
+    margin-left: 10px;
+}
+
+.google{
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+
+.footer_img{
+    margin-top: 100px;
+    width: 100%;
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(10 , 1fr);
+}
+
+.footer-1{
+    width: 100%;
+    grid-column: 1 / 4;
+}
+.footer-3{
+    width: 100%;
+    grid-column: 4 / 6;
+}
+.footer-2{
+    width: 100%;
+    grid-column: 6 / 9;
+}
+.footer-7{
+    width: 100%;
+    grid-column: 9 / 11;
+}
+.footer-5{
+    width: 300px;
+    grid-column: 1 / 4;
+    margin-top: -195px;
+    margin-left: 80px;
+}
+.footer-4{
+    width: 100%;
+    grid-column: 6 / 9;
+    margin-top: -130px;
+}
+.footer-6{
+    width: 100%;
+    height: 340px;
+    grid-column: 9 / 11;
+    margin-top: -235px;
+}
+
+footer{
+    width: 100%;
+    height: 220px;
+    background-color: black;
+    margin-top: 60px;
+    display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 20px;
+}
+
+.p_fooder{
+    color: white;
+    padding: 50px;
+    width: 350px;
+}
+
+footer ul li{
+    list-style: none;
+    color: white;
+}
+footer ul{
+    margin-top: 40px;
+}
+
+.list_fooder{
+    display: flex;
+    margin-left: 300px;
+    
+}
+
+.t_list_fooder{
+    margin-bottom: 10px;
+}
+
+.fin{
+    text-align: center;
+    margin: 20px;
+}
