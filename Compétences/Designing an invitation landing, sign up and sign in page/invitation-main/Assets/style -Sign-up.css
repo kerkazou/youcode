@@ -7,7 +7,7 @@ body{
     margin-left: 110px;
     margin-right: 110px;
 }
-/******************************************log in**************************/
+/******************************************sign up**************************/
 .background-Sign-up{
     opacity: 40%;
 }
@@ -38,7 +38,8 @@ body{
     width: 110px;
     height: 110px;
     margin-left: 240px;
-    margin-top: -45px;
+    margin-top: -55px;
+    margin-bottom: -15px;
 }
 
 .page2-Sign-up{
@@ -88,7 +89,7 @@ body{
     width: 200px;
     height: 30px;
     margin-left: 55px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .button-Sign-up{
@@ -115,15 +116,13 @@ body{
     margin-top: 40px;
 }
 
-.checkbox{}
-
 .placeholder{
     margin-left: 15px;
 }
 
 
 
-/******************************************log in**************************/
+/******************************************sign up**************************/
 /*navigateur*/
 .logo{
     font-size: 20px;

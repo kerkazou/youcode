@@ -30,6 +30,9 @@ body{
     margin-left: 555px;
     margin-top: -15px;
 }
+.Ballot-X-heavy:hover{
+    background-color: white;
+}
 
 .user{
     width: 140px;
@@ -85,8 +88,6 @@ body{
     list-style: none;
     margin-top: 40px;
 }
-
-.checkbox{}
 
 .placeholder{
     margin-left: 15px;
