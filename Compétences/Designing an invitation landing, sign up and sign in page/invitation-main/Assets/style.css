@@ -1,5 +1,6 @@
 * {
     font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
 }
 
 body{
@@ -45,7 +46,38 @@ nav ul a:hover{
     background-color: black;
     color: white;
 }
+
+
+
+
+
+
+
 /*header*/
+
+
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-height: 300px;
+}
+
+.flex1 {
+    width: 60%;
+    padding-left: 4%;
+}
+
+.flex2 {
+    width: 40%;
+}
+
+
+
+
+
+
 header{
     width: 100%;
     height: 300px;
@@ -54,27 +86,23 @@ header{
 }
 
 .hero-image{
-    margin-left: 800px;
-    margin-top: -20px;
-    width: 480px;
+    width: 100%;
+    max-width: 470px;
+    padding: 15% 0 0 0;
 }
 
 body header h1{
     color: white;
-    margin-left: 70px;
-    margin-top: -320px;
 }
 
 body header p{
     color: white;
-    margin-left: 70px;
-    width: 43%;
+    width: 80%;
 }
 
 body header div select{
     width: 350px;
     height: 40px;
-    margin-left: 70px;
     color: grey;
     border-radius: 5px;
 }
@@ -86,78 +114,51 @@ body header div select{
     border-radius: 5px;
     background: linear-gradient(70deg, #FB7B30,#A831A5);
     font-size: 13px;
-    margin-left: 10px;
 }
+
+
+/**********header*********/
 
 .margin{
-    margin-top: 100px;
-    margin-bottom: -180px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.company-1{
-    width: 200px;
-    height: 60px;
-    margin-right: 55px;
+.margin img {
+    width: 90%;
 }
 
-.company-4{
-    width: 160px;
-    height: 40px;
-    margin-right: 55px;
-}
 
-.company-2{
-    width: 160px;
-    height: 40px;
-    margin-right: 55px;
-}
-
-.company-3{
-    width: 160px;
-    height: 35px;
-    margin-right: 55px;
-}
-
-.company-5{
-    width: 230px;
-    height: 50px;
-    margin-right: 55px;
-}
-
-.company-6{
-    width: 80px;
-    height: 50px;
-}
 
 .illustration{
-    margin-top: 260px;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     width: 100%;
 }
-.h_illustration{
+.h_illustration {
     text-align: center;
 }
 
 .left-illustration{
-    width: 30%;
+    width: 25%;
 }
 
 .left-illustration img{
     width: 100%;
-    height: 630px;
 }
 
 .right-illustration{
-    width: 30%;
+    width: 25%;
 }
 
 .right-illustration img{
     width: 100%;
-    height: 630px;
 }
 
 .p_illustration{
-    width: 40%;
+    width: 50%;
     padding: 40px;
 }
 
@@ -165,7 +166,7 @@ body section .t_illustration{
     text-align: center;
 }
 
-body section h3{
+body section h3 {
     margin-left: 8%;
     display: flex;
 }
@@ -195,34 +196,42 @@ body section .button button{
     color: white;
     background: linear-gradient(70deg, #FB7B30,#A831A5);
 }
-
-.header2{
+.header2 {
     margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-height: 300px;
+}
+
+.flex3{
+    width: 50%;
+    padding-left: 4%;
+}
+.flex4{
+    width: 50%;
+    padding-top: 30px;
 }
 
 .signup-image{
-    margin-top: -50px;
-    margin-left: 46%;
-    width: 670px;
+    width: 100%;
 }
 
 .h_header2{
     color: white;
-    width: 580px;
+    width: 100%;
     font-size: 40px;
-    margin-left: 50px;
 }
+
 .p_header2{
-    margin-left: 50px;
+    width: 100%;
+    margin-bottom: 15px;
+    margin-left: 0px;
 }
 
 .check-ic{
     width: 30px;
     height: 30px;
-}
-
-.button2{
-   margin-left: 50px;
 }
 
 #button21{
@@ -252,45 +261,52 @@ body section .button button{
 }
 
 .footer_img{
-    margin-top: 100px;
+    margin-top: 15%;
     width: 100%;
     display: grid;
-    gap: 25px;
+    gap: 1.5%;
+    row-gap: 1.5%;
     grid-template-columns: repeat(10 , 1fr);
 }
 
 .footer-1{
     width: 100%;
-    grid-column: 1 / 4;
 }
 .footer-3{
     width: 100%;
-    grid-column: 4 / 6;
 }
 .footer-2{
     width: 100%;
-    grid-column: 6 / 9;
 }
 .footer-7{
     width: 100%;
-    grid-column: 9 / 11;
 }
 .footer-5{
-    width: 300px;
-    grid-column: 1 / 4;
-    margin-top: -195px;
-    margin-left: 80px;
+    width: 80%;
+    padding-top: 4%;
+    float: right;
 }
 .footer-4{
     width: 100%;
-    grid-column: 6 / 9;
-    margin-top: -130px;
+    padding-top: 4%;
 }
-.footer-6{
+.footer-6 {
     width: 100%;
-    height: 340px;
-    grid-column: 9 / 11;
-    margin-top: -235px;
+    height: 72%;
+    padding-top: 4%;
+}
+
+.footer15{
+    grid-column: 1 / 4;
+}
+.footer3{
+     grid-column: 4 / 6;
+}
+.footer24{
+    grid-column: 6 / 9;
+}
+.footer67{
+    grid-column: 9 /11;
 }
 
 footer{
@@ -308,9 +324,8 @@ footer{
 .p_fooder{
     color: white;
     padding: 50px;
-    width: 350px;
+    width: 50%
 }
-
 footer ul li{
     list-style: none;
     color: white;
@@ -318,16 +333,13 @@ footer ul li{
 footer ul{
     margin-top: 40px;
 }
-
 .list_fooder{
     display: flex;
-    margin-left: 300px;
-    
 }
-
 .t_list_fooder{
     margin-bottom: 10px;
 }
+
 
 .fin{
     text-align: center;
