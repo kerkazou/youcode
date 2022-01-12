@@ -1,6 +1,17 @@
+a{
+    text-decoration: none;
+    color: white;
+}
 
+ul{
+    border: 1px solid;
+    width: 80px;
+    height: 5px;
+    background-color: gray;
+    padding-top: 50px;
+    transition: width 3s;
+}
 
-.Menu{
-    width: 100px;
-    height: 100px;
+ul:hover{
+    height: 150px;
 }
